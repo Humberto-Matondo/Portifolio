@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif; /*MUDAR A FONTE DA PAGINA*/
+    font-family: 'poppins', sans-serif;
+    /*MUDAR A FONTE DA PAGINA*/
 }
 
 body {
@@ -28,6 +29,9 @@ body {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
 }
 
 .navbar a {
@@ -38,18 +42,21 @@ body {
     font-weight: 500;
     margin-left: 35px;
     transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
 }
 
 .navbar a:hover {
     color: #0ef;
 }
 
-.home{
+.home {
     position: relative;
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background: url(./img/endless-constellation.png) no-repeat; /*MUDAR O backgound da PAGINA*/
+    background: url(./img/endless-constellation.png) no-repeat;
+    /*MUDAR O backgound da PAGINA*/
     background-size: cover;
     background-position: center;
     display: flex;
@@ -57,24 +64,40 @@ body {
     padding: 70px 10% 0;
 }
 
-.home-content{
+.home-content {
     max-width: 600px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
 }
-.home-content h3{
+
+.home-content h3 {
     font-size: 32px;
     font-weight: 700;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
 }
-.home-content h1{
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 30px;
+}
+
+.home-content h3 span {
+    color: #0ef;
+}
+
+.home-content h1 {
     font-size: 56px;
     font-weight: 700;
     margin: -3px 0;
 }
 
-.home-content p{
+.home-content p {
     font-size: 20px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
 }
 
-.home-sci a{
+.home-sci a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -89,22 +112,48 @@ body {
     margin: 30px 15px 30px 0;
 }
 
-.home-sci a:hover{
+.home-sci a:hover {
     background: #0ef;
     color: #081b29;
     box-shadow: 0 0 20px #0ef;
 }
+
 .btn-box {
     display: inline-block;
     padding: 12px 28px;
     background: #0ef;
     border-radius: 40px;
     font-size: 16px;
-    color:#081b29;
-    letter-spacing:1px;
+    color: #081b29;
+    letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
 }
-.btn-box:hover{
+
+.btn-box:hover {
     box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
