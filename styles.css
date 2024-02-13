@@ -18,7 +18,7 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 10px;
-    background: transparent;
+    background: #000000;   /*MUDAR A NAV COLOR DA PAGINA*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,6 +50,10 @@ body {
 }
 
 .navbar a:hover {
+    color: #0ef;
+}
+
+.home .home-content h1 span{
     color: #0ef;
 }
 
@@ -162,7 +166,7 @@ body {
 
 .about-text h2 {
     padding-bottom: -10%;
-    font-size: 60px;
+    font-size: 70px;
 }
 
 .about-text h2 span {
@@ -186,17 +190,28 @@ body {
 
 .main-text {
     padding-top: 130px;
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 .main-text h2 {
-    font-size: 60px;
+    margin-top: -50px;
+    font-size: 70px;
     line-height: 1;
     text-align: center;
 }
 
 .main-text h2 span {
     color: #0ef;
+}
+
+.portfolio-back {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(./img/endless-constellation.png) no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .portfolio-content {
@@ -216,6 +231,7 @@ body {
     border-radius: 8px;
     display: block;
     transition: transform 0.5s;
+    margin-top: 50px;
 }
 
 .layer {
@@ -223,6 +239,7 @@ body {
     height: 0;
     background: linear-gradient(rgba(0, 0, 0, 0.1), #0ef);
     border-radius: 8px;
+    position: absolute;
     left: 0;
     bottom: 0;
     overflow: hidden;
@@ -249,12 +266,12 @@ body {
 }
 
 .layer i {
-    color: #ff004f;
+    color: #000000;
     margin-top: 20px;
     font-size: 20px;
     background: #fff;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -279,7 +296,7 @@ body {
 }
 
 .contact-text h2 {
-    font-size: 90px;
+    font-size: 70px;
     line-height: 1;
     text-align: center;
 }
@@ -291,7 +308,8 @@ body {
 .contact-text h4 {
     margin: 15px 0;
     color: rgb(228, 228, 228);
-    font-size: 600;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .contact-text p {
@@ -302,20 +320,12 @@ body {
 }
 
 .contact-list {
-    margin-bottom: 3rem;
+    margin-bottom: -1rem;
 }
 
 .contact-list li {
-    margin-bottom: 10rem;
+    margin-bottom: 10px;
     display: block;
-}
-
-.contact-list i {
-    display: inline-block;
-    color: #0ef;
-    font-size: 20px;
-    font-weight: 600;
-    transition: all .40s ease;
 }
 
 .contact-list li a:hover {
@@ -335,11 +345,11 @@ body {
     font-size: 20px;
     color: #0ef;
     text-decoration: none;
-    margin: 30px 15px 30px 0;
+    margin: 30px 15px 240px 0;
     transition: .5s ease;
     opacity: 0;
-    animation: slideRight 1s ease forwards ease-in;
-    animation-delay: calc(.2s*var(--i));
+    animation: slideRight 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
 }
 
 .contact-icons i:hover {
@@ -357,8 +367,8 @@ form textarea {
     border: none;
     outline: none;
     width: 90%;
-    padding: 18px;
-    background: #555557;
+    padding: 17px;
+    background: #434343;
     color: #000;
     font-size: 1rem;
     font-weight: 600;
@@ -371,7 +381,7 @@ form textarea {
     height: 220px;
 }
 
-.contact-forms form .send {
+.contact-form form .send {
     display: inline-block;
     padding: 14px 60px;
     background: #0ef;
@@ -384,12 +394,12 @@ form textarea {
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
-    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef, ;
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
 
 }
 
 
-.contact-forms form .send:hover {
+.contact-form form .send:hover {
     box-shadow: 0 0 5px cyan,
         0 0 25px cyan,
         0 0 50px cyan,
@@ -397,15 +407,16 @@ form textarea {
         0 0 200px cyan;
 }
 
-.last-text p{
+.last-text p {
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: rgb(7, 85, 91);
+    background: #081b29;
     font-weight: 300;
     margin-top: 70px;
 }
-.top{
+
+.top {
     position: fixed;
     bottom: 2.1rem;
     right: 2.1rem;
@@ -416,11 +427,17 @@ form textarea {
     background: #0ef;
     font-size: 20px;
     padding: 10px;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
 
 }
 
-
+.top i:hover {
+    box-shadow: 0 0 5px cyan,
+        0 0 25px cyan,
+        0 0 50px cyan,
+        0 0 100px cyan,
+        0 0 200px cyan;
+}
 
 
 
