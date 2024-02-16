@@ -13,21 +13,15 @@ body {
 }
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    padding: 20px 10px;
-    background: #000000;   /*MUDAR A NAV COLOR DA PAGINA*/
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+    min-width: 100vh;
+    background: #000000;
+    /*MUDAR A NAV COLOR DA PAGINA*/
 }
 
 .logo {
     display: flex;
-    font-size: 40px;
+    font-size: 30px;
     text-decoration: none;
     font-weight: 600;
     color: #ffff;
@@ -37,38 +31,64 @@ body {
     animation: slideTop 1s ease forwards;
 }
 
-.logo b{
+.logo b {
     position: relative;
-    bottom: -30px;
-    width: 20px;
-    height: 20px;
-    border: 10px solid #0ef;
+    bottom: -40px;
+    width: 5px;
+    height: 5px;
+    border: 9px solid #0ef;
     border-radius: 100%;
 }
 
-.logo span{
-    color: #0ef;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+nav {
+    background-color: #081b29;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    line-height: 80px;
+    z-index: 100;
 }
 
-.navbar a {
-    display: inline-block;
-    font-size: 25px;
-    color: #fff;
+.navbar {
+    padding-right: 200px;
+}
+
+.navbar ul {
+    display: flex;
     text-decoration: none;
-    font-weight: 500;
-    margin-left: 35px;
-    transition: .3s;
-    opacity: 0;
-    animation: slideTop .5s ease forwards;
-    animation-delay: calc(.2s * var(--i));
+}
+
+.navbar li {
+    list-style: none;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+}
+
+.toggle {
+    position: relative;
+    display: flex;
+    left: 200px;
+    margin-top: 1px;
+    cursor: pointer;
+    align-items: center;
+    font-size: 22px;
+    color: #fff;
+    animation: slideTop 1s ease forwards;
 }
 
 .navbar a:hover {
     color: #0ef;
 }
 
-.home .home-content h1 span{
+.home .home-content h1 span {
     color: #0ef;
 }
 
@@ -410,7 +430,7 @@ form textarea {
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
     box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
-
+    cursor: pointer;
 }
 
 
