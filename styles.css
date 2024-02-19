@@ -287,7 +287,7 @@ nav {
     transition: height 0.5s;
 }
 
-.layer h5 {
+.layer h1 {
     color: #000;
     font-size: 20px;
     font-weight: 600;
@@ -473,6 +473,139 @@ form textarea {
         0 0 100px cyan,
         0 0 200px cyan;
 }
+
+.main-text p{
+    position: relative;
+    text-align: center;
+    line-height: 1;
+    width: 1000px;
+    left: 19%;
+}
+
+.main-text p span {
+    color: #0ef;
+}
+
+.portfolio-back2 {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.portfolio2{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 460px;
+    overflow: hidden;
+}
+
+#next,
+#prev {
+    position: absolute;
+    top: 40%;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-size: xxx-large;
+    font-family: monospace;
+    font-weight: bold;
+    left: 500px;
+    cursor: pointer;
+}
+
+#next {
+    left: unset;
+    right: 470px;
+}
+
+.item {
+    position: absolute;
+    width: 440px;
+    height: 100%;
+    padding: 20px;
+    transition: 0.5s;
+    left: 35.5%;
+    top: 0;
+    text-align: center;
+}
+
+.item img {
+    margin-bottom: 25px;
+    border-radius: 8px;
+    transition: transform 0.5s;
+}
+
+.layers {
+    width: 400px;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(12, 17, 124));
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+}
+
+.layers h5 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.layers p {
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.layers i {
+    margin-top: 10px;
+    font-size: 20px;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.item:hover img {
+    transform: scale(1.1);
+}
+
+.item:hover .layers {
+    width: 480px;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
 
 
 
