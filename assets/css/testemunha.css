@@ -1,19 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
-
-.container {
+.container-test {
     height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e3f2fd;
+    background: #081b29;
 }
 
 .testimonial {
@@ -45,12 +36,12 @@
     padding: 0 100px;
     font-size: 14px;
     font-weight: 400;
-    color: #333;
+    color: #ffffff;
 }
 
 .slide .quote-icon {
     font-size: 30px;
-    color: #4070f4;
+    color: #0ef;
 }
 
 .slide .details {
@@ -62,13 +53,13 @@
 .details .name {
     font-size: 14px;
     font-weight: 600;
-    color: #333;
+    color: #ffffff;
 }
 
 .details .job {
     font-size: 12px;
     font-weight: 400;
-    color: #333;
+    color: #ffffff;
 }
 
 .nav-btn {
@@ -79,17 +70,12 @@
 .nav-btn::after,
 .nav-btn::before {
     font-size: 40px;
-    color: #4070f4;
+    color:  #0ef;
 }
-
-.swiper-pagination-bullet {
-    background-color: rgba(0, 0, 0, 0.8);
+.swiper-pagination-bullet{
+    color: #0ef;
+    background-color: #0ef;
 }
-
-.swiper-pagination-bullet-active {
-    background-color: #4070f4
-}
-
 @media screen and (max-width:768px) {
     .slide p {
         padding: 0 20px;
