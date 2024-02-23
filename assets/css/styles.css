@@ -226,8 +226,16 @@ button {
 .about-text p {
     color: aliceblue;
     font-size: 20px;
-    line-height: 1.4;
+    line-height: 1.2;
     margin-bottom: 4rem;
+    width: 700px;
+}
+
+.project{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 130vh;
 }
 
 .main-text {
@@ -235,18 +243,18 @@ button {
     margin-top: 150px;
 }
 
-.main-text h2 {
+.main-text .h2 {
     margin-top: -50px;
     font-size: 70px;
     line-height: 1;
     text-align: center;
 }
 
-.main-text h2 span {
+.main-text .h2 span {
     color: #0ef;
 }
 
-.main-text p {
+.main-text .p {
     position: relative;
     text-align: center;
     line-height: 1;
@@ -254,127 +262,8 @@ button {
     left: 19%;
 }
 
-.main-text p span {
+.main-text .p span {
     color: #0ef;
-}
-
-.portfolio-back2 {
-    position: relative;
-    width: 100%;
-    justify-content: space-between;
-    height: 100vh;
-}
-
-.portfolio2 {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.slider {
-    position: relative;
-    width: 100%;
-    height: 460px;
-    overflow: hidden;
-}
-
-#next,
-#prev {
-    position: absolute;
-    top: 40%;
-    color: #fff;
-    background-color: transparent;
-    border: none;
-    font-size: xxx-large;
-    font-family: monospace;
-    font-weight: bold;
-    left: 450px;
-    cursor: pointer;
-}
-
-#next {
-    left: unset;
-    right: 415px;
-}
-
-.item {
-    position: absolute;
-    width: 440px;
-    height: 100%;
-    padding: 20px;
-    transition: 0.5s;
-    left: 35.5%;
-    top: 0;
-    text-align: center;
-}
-
-.item img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 25px;
-    border-radius: 8px;
-    object-fit: cover;
-    transition: transform 0.6s;
-    border: 1px solid blue;
-
-}
-
-.layers {
-    width: 100%;
-    height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(12, 17, 124));
-    border-radius: 8px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0 40px;
-    transition: height 0.6s;
-}
-
-.layers h1 {
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-.conteudo p {
-    width: 45vh;
-    left: auto;
-    display: flex;
-    color: #ffffff;
-    font-size: 1rem;
-    line-height: 1.8;
-}
-
-
-.layers i {
-    margin-top: 10px;
-    font-size: 20px;
-    background: #fff;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-}
-
-.item:hover img {
-    transform: scale(1.1);
-}
-
-.item:hover .layers {
-    width: 100%;
-    height: 100%;
 }
 
 .contact {
@@ -449,6 +338,51 @@ button {
     box-shadow: 0 0 20px #0ef;
 }
 
+.inputBox {
+    margin-bottom: 10px;
+}
+
+.inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.25);
+    transition: 0.5s;
+
+}
+
+.inputBox textarea:valid~span,
+.inputBox textarea:focus~span,
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+    color: #0ef;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 1em;
+    padding: 0 10px;
+    background: #081b29;
+    border-left: 1px solid #0ef;
+    border-right: 1px solid #0ef;
+    letter-spacing: 0.2em;
+}
+
+.inputBox:nth-child(3) textarea:valid~span,
+.inputBox:nth-child(3) textarea:focus~span,
+.inputBox:nth-child(3) input:valid~span,
+.inputBox:nth-child(3) input:focus~span {
+    background: #0ef;
+    color: #1d2b3a;
+    border-radius: 2px;
+}
+
+.inputBox textarea:valid,
+.inputBox textarea:focus,
+.inputBox input:valid,
+.inputBox input:focus {
+    border: 1px solid #0ef;
+}
+
 .contact-form form {
     position: relative;
 }
@@ -459,8 +393,9 @@ form textarea {
     outline: none;
     width: 90%;
     padding: 17px;
-    background: #434343;
-    color: #000;
+    background: #081b29;
+    border: 1px solid rgb(255, 255, 255, 0.25);
+    color: #0ef;
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
@@ -474,7 +409,7 @@ form textarea {
 
 .contact-form form .send {
     display: inline-block;
-    padding: 14px 60px;
+    padding: 14px 50px;
     background: #0ef;
     border-radius: 5px;
     font-size: 18px;
@@ -488,7 +423,6 @@ form textarea {
     box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
     cursor: pointer;
 }
-
 
 .contact-form form .send:hover {
     box-shadow: 0 0 5px cyan,
@@ -529,25 +463,6 @@ form textarea {
         0 0 100px cyan,
         0 0 200px cyan;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @keyframes slideRight {
