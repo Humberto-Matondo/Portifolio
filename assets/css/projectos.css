@@ -1,3 +1,20 @@
+:root {
+    --cor-principal: #081b29;
+    --cor-secundaria: #0ef;
+    --tamanho-das-letras: 16px;
+    --brilho-cor-secundaria: cyan;
+}
+
+.project {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 150vh;
+    background: url(/img/Espaco.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .container-proj {
     position: relative;
     display: flex;
@@ -6,23 +23,24 @@
     flex-wrap: wrap;
     gap: 100px 50px;
     padding: 100px 50px;
-    
+
 
 }
-.container-proj .card-proj{
+
+.container-proj .card-proj {
     position: relative;
     justify-content: center;
     align-items: flex-start;
     width: 350px;
     height: 300px;
-    background:rgba(255, 255, 255, 0.394);
+    background: rgba(255, 255, 255, 0.394);
     border-radius: 20px;
     border-radius: 20px;
-    box-shadow:  0 35px 80px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
     transition: 0.5s;
 }
 
-.container-proj .card-proj:hover{
+.container-proj .card-proj:hover {
     height: 450px;
 }
 
@@ -37,12 +55,14 @@
     overflow: hidden;
     transition: 0.5s;
 }
-.container-proj .card-proj:hover .imgBX{
+
+.container-proj .card-proj:hover .imgBX {
     top: -100px;
     scale: 0.75;
     box-shadow: 0 15px 45px rgba(0, 0, 0, 0.4);
 }
-.container-proj .card-proj .imgBX img{
+
+.container-proj .card-proj .imgBX img {
     position: absolute;
     top: 0;
     left: 0;
@@ -50,6 +70,7 @@
     height: 100%;
     object-fit: cover;
 }
+
 .container-proj .card-proj .content-proj {
     position: absolute;
     top: 250px;
@@ -60,24 +81,26 @@
     text-align: center;
     transition: 0.5s;
 }
+
 .container-proj .card-proj:hover .content-proj {
     top: 140px;
     height: 320px;
 }
-.container-proj .card-proj .content-proj h2{
+
+.container-proj .card-proj .content-proj h2 {
     padding-bottom: 20px;
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--clr);
 }
 
-.container-proj .card-proj .content-proj p{
+.container-proj .card-proj .content-proj p {
     color: #333;
     font-size: 0.97rem;
     text-align: center;
 }
 
-.container-proj .card-proj .content-proj a{
+.container-proj .card-proj .content-proj a {
     position: relative;
     top: 10px;
     display: inline-block;

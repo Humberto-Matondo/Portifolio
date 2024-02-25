@@ -1,3 +1,11 @@
+:root {
+    --cor-principal: #081b29;
+    --cor-secundaria: #0ef;
+    --tamanho-das-letras: 16px;
+    --brilho-cor-secundaria: cyan;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -9,13 +17,13 @@
 
 body {
     color: #edededed;
-    background: #081b29;
+    background: var(--cor-principal);
 }
 
 .header {
     width: 100%;
     min-width: 100vh;
-    background: #000000;
+    background: transparent;
     /*MUDAR A NAV COLOR DA PAGINA*/
 }
 
@@ -41,7 +49,7 @@ body {
 }
 
 nav {
-    background-color: #081b29;
+    background-color: transparent;
     position: fixed;
     display: flex;
     width: 100%;
@@ -64,6 +72,7 @@ nav {
     list-style: none;
     margin: 0 15px;
     text-decoration: none;
+    animation: slideTop 1s ease forwards;
 }
 
 .navbar li a {
@@ -97,7 +106,9 @@ nav {
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background: url(/img/endless-constellation.png) no-repeat;
+    background: url(/img/Espaco.png) no-repeat;
+    background-size: cover;
+    background-position: center;
     /*MUDAR O backgound da PAGINA*/
     background-size: cover;
     background-position: center;
@@ -195,6 +206,8 @@ button {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1.5rem;
+    scroll-snap-type: y mandatory;
+
 }
 
 .about-img img {
@@ -229,13 +242,6 @@ button {
     line-height: 1.2;
     margin-bottom: 4rem;
     width: 700px;
-}
-
-.project{
-    position: relative;
-    width: 100%;
-    justify-content: space-between;
-    height: 130vh;
 }
 
 .main-text {
@@ -273,6 +279,11 @@ button {
     gap: 3rem;
     padding-left: 30px;
     margin-top: 130px;
+    background: url(/img/Espaco.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
 }
 
 .contact-text h2 {
@@ -464,6 +475,14 @@ form textarea {
         0 0 200px cyan;
 }
 
+.footer{
+    height: 1vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 @keyframes slideRight {
     0% {

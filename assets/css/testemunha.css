@@ -1,3 +1,10 @@
+:root {
+    --cor-principal: #081b29;
+    --cor-secundaria: #0ef;
+    --tamanho-das-letras: 16px;
+    --brilho-cor-secundaria: cyan;
+}
+
 .container-test {
     height: 100vh;
     width: 100%;
@@ -18,15 +25,6 @@
     color: #0ef;
 }
 
-
-.container-test .p {
-    position: relative;
-    text-align: center;
-    line-height: 1;
-    width: 1000px;
-    bottom: 150px;
-}
-
 .container-test .p span {
     color: #0ef;
 }
@@ -37,7 +35,7 @@
     width: 100%;
     padding: 50px 0;
     overflow: hidden;
-    bottom: 150px;
+    bottom: 110px;
 }
 
 .testimonial .image {
