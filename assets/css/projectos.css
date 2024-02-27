@@ -10,9 +10,6 @@
     width: 100%;
     justify-content: space-between;
     height: 150vh;
-    background: url(/img/Espaco.png) no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .container-proj {

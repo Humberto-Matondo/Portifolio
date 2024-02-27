@@ -1,5 +1,5 @@
 :root {
-    --cor-principal: #081b29;
+    --cor-principal: #03045e;
     --cor-secundaria: #0ef;
     --tamanho-das-letras: 16px;
     --brilho-cor-secundaria: cyan;
@@ -17,7 +17,7 @@
 
 body {
     color: #edededed;
-    background: var(--cor-principal);
+    background: #020224;
 }
 
 .header {
@@ -25,6 +25,12 @@ body {
     min-width: 100vh;
     background: transparent;
     /*MUDAR A NAV COLOR DA PAGINA*/
+}
+
+.header.rolagem{
+    background-color: #fff;
+    padding: 40px;
+    z-index: 100;
 }
 
 .logo {
@@ -279,7 +285,7 @@ button {
     gap: 3rem;
     padding-left: 30px;
     margin-top: 130px;
-    background: url(/img/Espaco.png) no-repeat;
+    background: url(/img/Espaco-inverso.png) no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -447,7 +453,6 @@ form textarea {
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #081b29;
     font-weight: 300;
     margin-top: 70px;
 }
@@ -475,7 +480,7 @@ form textarea {
         0 0 200px cyan;
 }
 
-.footer{
+.footer {
     height: 1vh;
     width: 100%;
     display: flex;
