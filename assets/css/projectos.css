@@ -9,7 +9,19 @@
     position: relative;
     width: 100%;
     justify-content: space-between;
-    height: 150vh;
+    height: 140vh;
+    background-color: #020224;
+}
+
+.main-text2 .h2 {
+    margin-top: 100px;
+    font-size: 70px;
+    line-height: 1;
+    text-align: center;
+}
+
+.main-text2 .h2 span {
+    color: #0ef;
 }
 
 .container-proj {
@@ -19,9 +31,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 100px 50px;
-    padding: 100px 50px;
-
-
+    padding: 90px 50px;
 }
 
 .container-proj .card-proj {
