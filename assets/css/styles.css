@@ -59,6 +59,7 @@ body {
     cursor: pointer;
     text-transform: uppercase;
     animation: slideTop 1s ease forwards;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .logo b {
@@ -505,13 +506,6 @@ form textarea {
     justify-content: center;
 }
 
-.active-link{
-    color: #0ef;
-}
-
-.header.sticky .active-link{
-    color: #0ef;
-}
 
 @keyframes slideRight {
     0% {
