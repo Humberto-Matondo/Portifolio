@@ -20,11 +20,33 @@ body {
     background: #020224;
 }
 
+
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    min-width: 100vh;
+    padding: 2rem 10%;
     background: transparent;
-    /*MUDAR A NAV COLOR DA PAGINA*/
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    height: 70px;
+    transition: .5s;
+}
+
+.header.sticky {
+    background: #020224;
+    box-shadow: 0 .1rem 50rem black;
+
+}
+
+.header.sticky .navbar a {
+    color: white;
+}
+
+.header.sticky .navbar a:hover {
+    color: #0ef;
 }
 
 .logo {
@@ -49,36 +71,22 @@ body {
 }
 
 nav {
-    background-color: transparent;
-    position: fixed;
     display: flex;
-    width: 100%;
-    justify-content: space-around;
-    height: 80px;
-    line-height: 80px;
-    z-index: 100;
+    margin-right: 3.5rem;
 }
 
 .navbar {
-    padding-right: 200px;
+    position: relative;
+    left: 600px;
 }
 
-.navbar ul {
+.navbar a {
     display: flex;
-    text-decoration: none;
-}
-
-.navbar li {
-    list-style: none;
     margin: 0 15px;
-    text-decoration: none;
-    animation: slideTop 1s ease forwards;
-}
-
-.navbar li a {
     text-decoration: none;
     color: #fff;
     font-size: 22px;
+    animation: slideTop 1s ease forwards;
 }
 
 .toggle {
@@ -97,6 +105,10 @@ nav {
     color: #0ef;
 }
 
+.logo:hover {
+    color: #0ef;
+}
+
 .scroll {
     scroll-snap-type: y mandatory;
 }
@@ -107,7 +119,6 @@ nav {
     left: 0;
     scroll-snap-align: start;
 }
-
 
 
 .home .home-content h1 span {
@@ -494,6 +505,13 @@ form textarea {
     justify-content: center;
 }
 
+.active-link{
+    color: #0ef;
+}
+
+.header.sticky .active-link{
+    color: #0ef;
+}
 
 @keyframes slideRight {
     0% {
