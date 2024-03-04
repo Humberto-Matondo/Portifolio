@@ -78,7 +78,7 @@ nav {
 
 .navbar {
     position: relative;
-    left: 600px;
+    left: 570px;
 }
 
 .navbar a {
@@ -221,6 +221,32 @@ button {
 
 .btn-box:hover {
     box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+
+.home-image{
+    position: relative;
+    top: -10%;
+    left: -4%;
+}
+.img-box{
+    text-align: center;
+}
+.img-box img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.liquid-shape{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 23%;
+}
+
+.liquid-shape:nth-child(2){
+    filter: blur(100px);
 }
 
 .about {
