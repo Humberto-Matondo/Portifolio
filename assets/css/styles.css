@@ -139,6 +139,10 @@ nav {
     padding: 70px 10% 0;
 }
 
+#particles-js{
+    position: relative;
+}
+
 .home-content {
     max-width: 600px;
     opacity: 0;

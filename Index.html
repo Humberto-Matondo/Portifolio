@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/skill.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/Js/particlesjs-config.json">
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
@@ -46,10 +47,12 @@
                     <a href="#" style="--i:9"><i class='bx bxl-instagram'></i></a>
                 </div>
                 <button class="btns btn-box">
-                    <a href="#" style="text-decoration: none; color: #081b29;">Download CV-EN</a>
+                    <a href="https://drive.google.com/file/d/1TyQkf54ObLTT63W-Uw1tcgLNVDv47ROP/view?usp=drive_link"
+                        style="text-decoration: none; color: #081b29;">Download CV-EN</a>
                 </button>
                 <button class="btns btn-box">
-                    <a href="#" style="text-decoration: none; color: #081b29;">Download CV-PT</a>
+                    <a href="https://drive.google.com/file/d/1TyQkf54ObLTT63W-Uw1tcgLNVDv47ROP/view?usp=drive_link"
+                        style="text-decoration: none; color: #081b29;">Download CV-PT</a>
                 </button>
             </div>
             <div class="home-image">
@@ -419,19 +422,21 @@
                 </div>
             </div>
             <div class="contact-form">
-                <form action="">
+                <form action="" id="contact-forms">
                     <div class="inputBox">
-                        <input type="text" required>
+                        <input type="text" name="user_name" required>
                         <span>Your Name</span>
                     </div>
                     <div class="inputBox">
-                        <input type="email" required>
+                        <input type="email" name="user_email" required>
                         <span>Your E-mail</span>
                     </div>
                     <div class="inputBox">
-                        <textarea name="" id="" cols="40" rows="10" required></textarea>
+                        <textarea name="user_message" id="" cols="40" rows="10" required></textarea>
                         <span>Your Messager</span>
                     </div>
+                    <p class="contact__message" id="contact-message"></p>
+                    <br>
                     <input type="submit" value="Enviar" class="send" id="send">
                 </form>
             </div>
@@ -450,6 +455,10 @@
     <script src="assets/Js/testemunhas.js"></script>
     <script src="assets/Js/header.js"></script>
     <script src="assets/Js/activeLink.js"></script>
+    <script src="assets/Js/particles.js"></script>
+    <script src="assets/Js/app.js"></script>
+    <script src="assets/Js/contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </body>
 
 </html>
