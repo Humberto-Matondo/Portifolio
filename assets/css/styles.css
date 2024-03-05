@@ -139,8 +139,13 @@ nav {
     padding: 70px 10% 0;
 }
 
-#particles-js{
-    position: relative;
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 .home-content {
@@ -227,21 +232,24 @@ button {
     box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
 }
 
-.home-image{
+.home-image {
     position: relative;
     top: -10%;
     left: -4%;
+    z-index: 3;
 }
-.img-box{
+
+.img-box {
     text-align: center;
 }
-.img-box img{
+
+.img-box img {
     width: 100%;
     max-width: 500px;
     height: auto;
 }
 
-.liquid-shape{
+.liquid-shape {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -249,7 +257,7 @@ button {
     top: 23%;
 }
 
-.liquid-shape:nth-child(2){
+.liquid-shape:nth-child(2) {
     filter: blur(100px);
 }
 
@@ -325,7 +333,17 @@ button {
     color: #0ef;
 }
 
+#particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
 .contact {
+    position: relative;
     height: 100vh;
     width: 100%;
     display: grid;
@@ -334,9 +352,9 @@ button {
     gap: 3rem;
     padding-left: 30px;
     margin-top: 130px;
-    background: url(/img/Espaco-inverso.png) no-repeat;
+    background: url(/img/Espaco-inverso.png);
     background-size: cover;
-
+    z-index: 1;
 }
 
 .contact-text h2 {
@@ -394,6 +412,7 @@ button {
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: calc(.2s * var(--i));
+    
 }
 
 .contact-icons i:hover {
@@ -508,6 +527,7 @@ form textarea {
     position: fixed;
     bottom: 2.1rem;
     right: 2.1rem;
+    z-index: 2;
 }
 
 .top i {
