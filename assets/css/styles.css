@@ -234,7 +234,7 @@ button {
 
 .home-image {
     position: relative;
-    top: -10%;
+    top: -2%;
     left: -4%;
     z-index: 3;
 }
@@ -245,8 +245,25 @@ button {
 
 .img-box img {
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     height: auto;
+    animation: floatImage 6s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2.4rem);
+
+    }
+
+    100% {
+        transform: translateY(0);
+
+    }
 }
 
 .liquid-shape {
@@ -361,6 +378,8 @@ button {
     font-size: 70px;
     line-height: 1;
     text-align: center;
+    margin: 60px 0;
+
 }
 
 .contact-text h2 span {
@@ -412,7 +431,7 @@ button {
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: calc(.2s * var(--i));
-    
+
 }
 
 .contact-icons i:hover {
