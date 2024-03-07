@@ -131,7 +131,8 @@ nav {
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background: url(/img/Espaco.png) no-repeat;
+    /*background: url(/img/Espaco.png) no-repeat;*/
+    background: url(/img/Estrelado.png) no-repeat;
     background-size: cover;
     /*MUDAR O backgound da PAGINA*/
     display: flex;
@@ -369,7 +370,7 @@ button {
     gap: 3rem;
     padding-left: 30px;
     margin-top: 130px;
-    background: url(/img/Espaco-inverso.png);
+    background: url(/img/Estrelado-inverso.png);
     background-size: cover;
     z-index: 1;
 }
