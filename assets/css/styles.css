@@ -36,9 +36,8 @@ body {
 }
 
 .header.sticky {
-    background: #020224;
-    box-shadow: 0 .1rem 50rem black;
-
+    background: rgb(5, 8, 55);
+    background: linear-gradient(0deg, rgba(5, 8, 55, 1) 0%, rgba(5, 8, 55, 1) 20%, rgba(2, 2, 36, 1) 100%);
 }
 
 .header.sticky .navbar a {
@@ -131,10 +130,8 @@ nav {
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    /*background: url(/img/Espaco.png) no-repeat;*/
     background: url(/img/Estrelado.png) no-repeat;
     background-size: cover;
-    /*MUDAR O backgound da PAGINA*/
     display: flex;
     align-items: center;
     padding: 70px 10% 0;
@@ -286,7 +283,9 @@ button {
     align-items: center;
     gap: 1.5rem;
     scroll-snap-align: center;
-    background: #020224;
+    /*background-color: #050837;*/
+    background: rgb(2, 2, 36);
+    background: linear-gradient(0deg, rgba(2, 2, 36, 1) 30%, rgba(5, 8, 55, 1) 90%, rgba(5, 8, 55, 0) 100%);
 }
 
 .about-img img {

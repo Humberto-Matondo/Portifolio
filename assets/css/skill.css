@@ -2,29 +2,34 @@
     position: relative;
     width: 100%;
     justify-content: space-between;
-    height: 90vh;
-    background-color: #020224;
+    height: 100vh;
+    background: rgb(2, 2, 36);
+    background: linear-gradient(0deg, rgba(2, 2, 36, 1) 0%, rgba(5, 8, 55, 1) 50%, rgba(2, 2, 36, 1) 100%);
 }
-.skill h1{
+
+.skill h1 {
     position: relative;
     bottom: -130px;
 }
-.sub-title{
+
+.sub-title {
     margin-bottom: 200px;
 }
-.experience-sub-title{
+
+.experience-sub-title {
     color: #020224;
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
 }
 
-.experience-details{
+.experience-details {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-.article-container{
+
+.article-container {
     display: flex;
     text-align: initial;
     flex-wrap: wrap;
@@ -33,24 +38,24 @@
     justify-content: space-around;
 }
 
-article{
+article {
     display: flex;
     width: 10rem;
     justify-content: space-around;
     gap: 0.5rem;
 }
 
-article .icon-skill{
+article .icon-skill {
     cursor: pointer;
     height: 2rem;
     width: 2rem;
 }
 
-.about-containers{
+.about-containers {
     display: flex;
 }
 
-.details-container{
+.details-container {
     padding: 1.5rem;
     flex: 1;
     background: rgba(255, 255, 255, 0.394);
