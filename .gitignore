@@ -1,7 +1,7 @@
-app
-app copy.js
-particies.js
-swiper-bundle.min.js
-site.js
-site.css
-site.html
+./assets/js/app
+./assets/js/app copy.js
+./assets/js/particies.js
+./assets/js/swiper-bundle.min.js
+./site.js
+./site.css
+./site.html
