@@ -1,8 +1,8 @@
 :root {
-    --cor-principal: #081b29;
     --cor-secundaria: #0ef;
-    --tamanho-das-letras: 16px;
-    --brilho-cor-secundaria: cyan;
+    --tamanho-dos-textos: 16px;
+    --tamanho-dos-titulos: 20px;
+    --brilho-secundaria: cyan;
 }
 
 .container-test {
@@ -23,11 +23,11 @@
 }
 
 .container-test h2 span {
-    color: #0ef;
+    color: var(--cor-secundaria);
 }
 
 .container-test .p span {
-    color: #0ef;
+    color: var(--cor-secundaria);
 }
 
 .testimonial {
@@ -65,7 +65,7 @@
 
 .slide .quote-icon {
     font-size: 30px;
-    color: #0ef;
+    color: var(--cor-secundaria);
 }
 
 .slide .details {
@@ -94,12 +94,12 @@
 .nav-btn::after,
 .nav-btn::before {
     font-size: 40px;
-    color: #0ef;
+    color: var(--cor-secundaria);
 }
 
 .swiper-pagination-bullet {
-    color: #0ef;
-    background-color: #0ef;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-secundaria);
 }
 
 .Testi {

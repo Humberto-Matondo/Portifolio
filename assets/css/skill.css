@@ -1,3 +1,10 @@
+:root {
+    --cor-secundaria: #0ef;
+    --tamanho-dos-textos: 16px;
+    --tamanho-dos-titulos: 20px;
+    --brilho-secundaria: cyan;
+}
+
 .container {
     max-width: 1024px;
     margin-inline: 1.5rem;
@@ -68,7 +75,7 @@
 .skills__title i {
     font-size: 1rem;
     font-weight: initial;
-    color: #0ef;
+    color: var(--cor-secundaria);
 }
 
 .skills__info,
