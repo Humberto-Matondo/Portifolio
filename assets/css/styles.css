@@ -4,10 +4,10 @@
 :root {
     --title-font: "Lora", serif;
     --body-font: "Roboto", sans-serif;
-    --cor-secundaria: #0ef;
+    --cor-secundaria: #1e96fc !important;
     --tamanho-dos-textos: 16px;
     --tamanho-dos-titulos: 20px;
-    --brilho-cor-secundaria: cyan;
+    --brilho-cor-secundaria: #1e96fc !important;
 }
 
 
@@ -92,7 +92,7 @@ nav {
 
 .navbar {
     position: relative;
-    left: 570px;
+    left: 630px;
 }
 
 .navbar a {
@@ -243,7 +243,7 @@ button {
 }
 
 .btn-box:hover {
-    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+    box-shadow: 0 0 5px var(--brilho-cor-secundaria), 0 0 25px var(--brilho-cor-secundaria), 0 0 50px var(--brilho-cor-secundaria), 0 0 100px var(--brilho-cor-secundaria), 0 0 200px var(--brilho-cor-secundaria);
 }
 
 .home-image {
@@ -543,11 +543,11 @@ form textarea {
 }
 
 .contact-form form .send:hover {
-    box-shadow: 0 0 5px cyan,
-        0 0 25px cyan,
-        0 0 50px cyan,
-        0 0 100px cyan,
-        0 0 200px cyan;
+    box-shadow: 0 0 5px var(--brilho-cor-secundaria),
+        0 0 25px var(--brilho-cor-secundaria),
+        0 0 50px var(--brilho-cor-secundaria),
+        0 0 100px var(--brilho-cor-secundaria),
+        0 0 200px var(--brilho-cor-secundaria);
 }
 
 .last-text p {
@@ -575,11 +575,11 @@ form textarea {
 }
 
 .top i:hover {
-    box-shadow: 0 0 5px cyan,
-        0 0 25px cyan,
-        0 0 50px cyan,
-        0 0 100px cyan,
-        0 0 200px cyan;
+    box-shadow: 0 0 5px var(--brilho-cor-secundaria),
+        0 0 25px var(--brilho-cor-secundaria),
+        0 0 50px var(--brilho-cor-secundaria),
+        0 0 100px var(--brilho-cor-secundaria),
+        0 0 200px var(--brilho-cor-secundaria);
 }
 
 .footer {

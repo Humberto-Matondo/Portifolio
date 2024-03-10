@@ -1,5 +1,5 @@
 :root {
-    --cor-secundaria: #0ef;
+    --cor-secundaria: #2720e2;
     --tamanho-dos-textos: 16px;
     --tamanho-dos-titulos: 20px;
     --brilho-secundaria: cyan;
@@ -56,10 +56,10 @@
 }
 
 .skill__container {
-    row-gap: 3.5rem;
+    row-gap: 1.5rem;
     position: relative;
     ;
-    bottom: -27%;
+    bottom: -25%;
 }
 
 .skills__title {
