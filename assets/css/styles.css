@@ -20,7 +20,7 @@
 }
 
 body {
-    color: #edededed;
+    color: #fafafaed;
     background: #020224;
     font-family: var(--body-font);
     overflow-x: hidden;
@@ -44,7 +44,7 @@ h3 {
     display: flex;
     align-items: center;
     z-index: 100;
-    height: 70px;
+    height: 4.375rem;
     transition: .5s;
 }
 
@@ -63,11 +63,11 @@ h3 {
 
 .logo {
     display: flex;
-    font-size: 30px;
+    font-size: 1.875rem;
     text-decoration: none;
     font-weight: 600;
     color: #ffff;
-    letter-spacing: 2px;
+    letter-spacing: .125rem;
     cursor: pointer;
     text-transform: uppercase;
     animation: slideTop 1s ease forwards;
@@ -78,10 +78,10 @@ h3 {
 
 .logo b {
     position: relative;
-    bottom: -40px;
-    width: 5px;
-    height: 5px;
-    border: 9px solid var(--cor-secundaria);
+    bottom: -2.5rem;
+    width: 0.3125rem;
+    height: 0.3125rem;
+    border: 9px solid var(--cor-secundaria);    
     border-radius: 100%;
 }
 
@@ -92,15 +92,15 @@ nav {
 
 .navbar {
     position: relative;
-    left: 630px;
+    left: 39.375rem;
 }
 
 .navbar a {
     display: flex;
-    margin: 0 15px;
+    margin: 0 .9375rem;
     text-decoration: none;
     color: #fff;
-    font-size: 22px;
+    font-size: 1.375rem;
     font-family: "Lora", serif;
     animation: slideTop 1s ease forwards;
 }
@@ -108,11 +108,11 @@ nav {
 .toggle {
     position: relative;
     display: flex;
-    left: 200px;
+    left: 12.5rem;
     margin-top: 1px;
     cursor: pointer;
     align-items: center;
-    font-size: 22px;
+    font-size: 1.375rem;
     color: #fff;
     animation: slideTop 1s ease forwards;
 }
@@ -150,7 +150,7 @@ nav {
     background-size: cover;
     display: flex;
     align-items: center;
-    padding: 70px 10% 0;
+    padding: 4.375rem 10% 0;
 }
 
 #particles-js {
@@ -163,20 +163,20 @@ nav {
 }
 
 .home-content {
-    max-width: 600px;
+    max-width: 37.5rem;
     opacity: 0;
     animation: slideRight 1s ease forwards;
 }
 
 .home-content h3 {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
     opacity: 0;
     animation: slideRight 1s ease forwards;
 }
 
 .home-content h3:nth-of-type(2) {
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
 .home-content h3 span {
@@ -184,13 +184,13 @@ nav {
 }
 
 .home-content h1 {
-    font-size: 56px;
+    font-size: 3.5rem;
     font-weight: 700;
-    margin: -3px 0;
+    margin: -0.1875rem 0;
 }
 
 .home-content p {
-    font-size: 20px;
+    font-size: 1.25rem;
     opacity: 0;
     animation: slideRight 1s ease forwards;
 }
@@ -199,15 +199,15 @@ nav {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     background: transparent;
     border: 2px solid var(--cor-secundaria);
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: var(--cor-secundaria);
     text-decoration: none;
-    margin: 30px 15px 30px 0;
+    margin: 1.87rem .9rem 1.87rem 0;
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: calc(.2s * var(--i));
@@ -216,7 +216,7 @@ nav {
 .home-sci a:hover {
     background: var(--cor-secundaria);
     color: #081b29;
-    box-shadow: 0 0 20px var(--cor-secundaria);
+    box-shadow: 0 0 1.25rem var(--cor-secundaria);
 }
 
 button {
@@ -228,10 +228,10 @@ button {
 
 .btn-box {
     display: inline-block;
-    padding: 12px 28px;
+    padding: 0.75rem 1.75rem; 
     background: var(--cor-secundaria);
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1rem;
     color: #081b29;
     letter-spacing: 1px;
     text-decoration: none;
@@ -291,6 +291,8 @@ button {
 .liquid-shape:nth-child(2) {
     filter: blur(100px);
 }
+
+
 
 .about {
     height: 100vh;
@@ -404,13 +406,13 @@ button {
 
 .contact-text h4 {
     margin: 15px 0;
-    color: rgb(228, 228, 228);
+    color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: 600;
 }
 
 .contact-text p {
-    color: rgb(177, 177, 177);
+    color: rgb(255, 255, 255);
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 2rem;
