@@ -387,7 +387,7 @@ button {
     gap: 3rem;
     padding-left: 30px;
     margin-top: 130px;
-    background: url(/img/Estrelado-inverso.png);
+    background: url(/img/Invertido.png);
     background-size: cover;
     z-index: 1;
 }
