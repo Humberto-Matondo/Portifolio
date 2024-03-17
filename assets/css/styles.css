@@ -8,15 +8,15 @@
     --tamanho-dos-textos: 16px;
     --tamanho-dos-titulos: 20px;
     --brilho-cor-secundaria: #1e96fc !important;
+    --header-padding: 2rem;
+    --nav-width: -10rem;
 }
-
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-
 }
 
 body {
@@ -32,97 +32,6 @@ h3 {
     color: white;
     font-family: var(--title-font);
     font-weight: 500;
-}
-
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 2rem 10%;
-    background: transparent;
-    display: flex;
-    align-items: center;
-    z-index: 100;
-    height: 4.375rem;
-    transition: .5s;
-}
-
-.header.sticky {
-    background: rgb(5, 8, 55);
-    background: linear-gradient(0deg, rgba(5, 8, 55, 1) 0%, rgba(5, 8, 55, 1) 20%, rgba(2, 2, 36, 1) 100%);
-}
-
-.header.sticky .navbar a {
-    color: white;
-}
-
-.header.sticky .navbar a:hover {
-    color: var(--cor-secundaria);
-}
-
-.logo {
-    display: flex;
-    font-size: 1.875rem;
-    text-decoration: none;
-    font-weight: 600;
-    color: #ffff;
-    letter-spacing: .125rem;
-    cursor: pointer;
-    text-transform: uppercase;
-    animation: slideTop 1s ease forwards;
-    font-family: "Lora", serif;
-    font-weight: 300;
-    font-style: oblique;
-}
-
-.logo b {
-    position: relative;
-    bottom: -2.5rem;
-    width: 0.3125rem;
-    height: 0.3125rem;
-    border: 9px solid var(--cor-secundaria);    
-    border-radius: 100%;
-}
-
-nav {
-    display: flex;
-    margin-right: 3.5rem;
-}
-
-.navbar {
-    position: relative;
-    left: 50rem;
-}
-
-.navbar a {
-    display: flex;
-    margin: 0 .9375rem;
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.375rem;
-    font-family: "Lora", serif;
-    animation: slideTop 1s ease forwards;
-}
-
-.toggle {
-    position: relative;
-    display: flex;
-    left: 12.5rem;
-    margin-top: 1px;
-    cursor: pointer;
-    align-items: center;
-    font-size: 1.375rem;
-    color: #fff;
-    animation: slideTop 1s ease forwards;
-}
-
-.navbar a:hover {
-    color: var(--cor-secundaria);
-}
-
-.logo:hover {
-    color: var(--cor-secundaria);
 }
 
 .scroll {
@@ -228,7 +137,7 @@ button {
 
 .btn-box {
     display: inline-block;
-    padding: 0.75rem 1.75rem; 
+    padding: 0.75rem 1.75rem;
     background: var(--cor-secundaria);
     border-radius: 5px;
     font-size: 1rem;
