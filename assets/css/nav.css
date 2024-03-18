@@ -28,7 +28,7 @@
 
 .logo {
     display: flex;
-    font-size: 3rem;
+    font-size: 2rem;
     /* Use rem for font size */
     text-decoration: none;
     font-weight: 600;
@@ -45,7 +45,7 @@
 
 .logo b {
     position: relative;
-    bottom: -3.4rem;
+    bottom: -3.1rem;
     left: -.5rem;
     width: 0.1875rem;
     height: 0.1875rem;
