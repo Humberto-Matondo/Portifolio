@@ -28,7 +28,7 @@
 
 .logo {
     display: flex;
-    font-size: 2rem;
+    font-size: 3rem;
     /* Use rem for font size */
     text-decoration: none;
     font-weight: 600;
@@ -45,11 +45,11 @@
 
 .logo b {
     position: relative;
-    bottom: -3rem;
+    bottom: -3.4rem;
     left: -.5rem;
     width: 0.1875rem;
     height: 0.1875rem;
-    border: 9px solid var(--cor-secundaria);
+    border: 5px solid var(--cor-secundaria);
     border-radius: 100%;
 }
 
@@ -72,7 +72,7 @@ nav {
     color: #fff;
     font-size: 1.4rem;
     /* Use rem for font size */
-    font-family: "Lora", serif;
+    font-family: "Quicksand", sans-serif;
     animation: slideTop 1s ease forwards;
 }
 
