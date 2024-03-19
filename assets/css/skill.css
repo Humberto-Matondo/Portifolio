@@ -87,7 +87,7 @@
 
 .skills__info {
     grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem 5rem;
+    gap: 2.5rem 2rem;
 }
 
 .skills__data {
@@ -99,7 +99,7 @@
     width: 80px;
     height: 100px;
     background-color: rgba(192, 192, 192, 0.467);
-    border-radius: 3rem;
+    border-radius: 1rem;
     place-items: center;
     margin-bottom: 1rem;
 }
