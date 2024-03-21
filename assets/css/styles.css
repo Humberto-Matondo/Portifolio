@@ -185,6 +185,63 @@ button {
     filter: blur(100px);
 }
 
+@media (max-width: 999px) {
+    .home {
+        position: relative;
+        height: 100vh;
+    }
+
+    .home-content {
+        position: absolute;
+        top: 40%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+    }
+
+    .home-content h1,
+    h3 {
+        text-align: center;
+    }
+
+    .home-content p {
+        text-align: center;
+    }
+
+    .home-sci {
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 2rem;
+    }
+
+    .button {
+        text-align: center;
+    }
+
+    .home-image {
+        position: relative;
+        top: -33%;
+        left: 35%;
+        z-index: 3;
+    }
+
+    .img-box img {
+        position: relative;
+        width: 100%;
+        max-width: 25%;
+        height: auto;
+        left: -29%;
+    }
+    
+    .liquid-shape {
+        position: absolute;
+        width: 25%;
+        height: 10%;
+        z-index: -1;
+        left: 8%;
+    }
+}
 
 
 .about {
