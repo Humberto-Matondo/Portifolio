@@ -72,6 +72,7 @@ h3 {
     z-index: -1;
 }
 
+
 .home-content {
     max-width: 37.5rem;
     opacity: 0;
@@ -94,7 +95,7 @@ h3 {
 }
 
 .home-content h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 700;
     margin: -0.1875rem 0;
 }
@@ -158,8 +159,8 @@ button {
 
 .home-image {
     position: relative;
-    top: -2%;
-    left: -4%;
+    top: -8%;
+    left: 10%;
     z-index: 3;
 }
 
@@ -169,78 +170,44 @@ button {
 
 .img-box img {
     width: 100%;
-    max-width: 400px;
+    max-width: 55%;
     height: auto;
 }
 
 .liquid-shape {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     z-index: -1;
     top: 23%;
+    left: 23%;
 }
 
 .liquid-shape:nth-child(2) {
     filter: blur(100px);
 }
 
-@media (max-width: 999px) {
+@media (max-width: 1150px) {
+
     .home {
-        position: relative;
-        height: 100vh;
+        width: fit-content;
     }
 
     .home-content {
-        position: absolute;
-        top: 40%;
-        left: 20%;
-        transform: translate(-50%, -50%);
+        width: auto;
     }
-
-    .home-content h1,
-    h3 {
-        text-align: center;
-    }
-
-    .home-content p {
-        text-align: center;
-    }
-
-    .home-sci {
-        text-align: center;
-    }
-
-    .home-content h1 {
+    .home-content h1{
         font-size: 2rem;
     }
-
-    .button {
-        text-align: center;
+    .home-content h3, p, .home-sci .button{
+        font-size: 1.5rem;
     }
 
-    .home-image {
-        position: relative;
-        top: -33%;
-        left: 35%;
-        z-index: 3;
+    .home-content .button {
+        display: flex;
+        justify-content: space-around;
     }
 
-    .img-box img {
-        position: relative;
-        width: 100%;
-        max-width: 25%;
-        height: auto;
-        left: -29%;
-    }
-    
-    .liquid-shape {
-        position: absolute;
-        width: 25%;
-        height: 10%;
-        z-index: -1;
-        left: 8%;
-    }
 }
 
 
