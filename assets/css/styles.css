@@ -187,33 +187,6 @@ button {
     filter: blur(100px);
 }
 
-@media (max-width: 1150px) {
-
-    .home {
-        width: fit-content;
-    }
-
-    .home-content {
-        width: auto;
-    }
-
-    .home-content h1 {
-        font-size: 2rem;
-    }
-
-    .home-content h3,
-    p,
-    .home-sci .button {
-        font-size: 1.5rem;
-    }
-
-    .home-content .button {
-        display: flex;
-        justify-content: space-around;
-    }
-
-}
-
 .about {
     height: 100vh;
     display: grid;
@@ -263,6 +236,7 @@ button {
     margin-top: 150px;
 }
 
+
 #particles {
     position: absolute;
     top: 0;
@@ -288,7 +262,7 @@ button {
 }
 
 .contact-text h2 {
-    font-size: 70px;
+    font-size: 4rem;
     line-height: 1;
     margin: 60px 0;
 
@@ -301,13 +275,13 @@ button {
 .contact-text h4 {
     margin: 15px 0;
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
 .contact-text p {
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 1rem;
     line-height: 30px;
     margin-bottom: 2rem;
 }
@@ -478,16 +452,6 @@ form textarea {
         0 0 200px var(--brilho-cor-secundaria);
 }
 
-.footer {
-    height: 1vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
 @keyframes slideRight {
     0% {
         transform: translateX(-100px);
@@ -510,4 +474,35 @@ form textarea {
         transform: translateY(0px);
         opacity: 1;
     }
+}
+
+@media (max-width: 1150px) {
+
+    .home {
+        width: fit-content;
+    }
+
+    .home-content {
+        width: auto;
+    }
+
+    .home-content h1 {
+        font-size: 2rem;
+    }
+
+    .home-content h3,
+    p,
+    .home-sci .button {
+        font-size: 1.5rem;
+    }
+
+    .home-content .button {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .about {
+        height: 160vh;
+    }
+
 }

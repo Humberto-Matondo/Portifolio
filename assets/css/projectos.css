@@ -9,13 +9,13 @@
     position: relative;
     width: 100%;
     justify-content: space-between;
-    height: 140vh;
+    height: 160vh;
     background: rgb(2, 2, 36);
     background: linear-gradient(0deg, rgba(2, 2, 36, 1) 0%, rgba(5, 8, 55, 1) 50%, rgba(2, 2, 36, 1) 100%);
 }
 
 .main-text3 .h2 {
-    margin-top: 100px;
+    margin-top: 80px;
     font-size: 70px;
     line-height: 1;
     text-align: center;
@@ -81,7 +81,6 @@
 .container-proj .card-proj .content-proj {
     position: absolute;
     top: 250px;
-    width: 100%;
     padding: 0 30px;
     height: 35px;
     overflow: hidden;
@@ -128,4 +127,10 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+}
+
+@media (max-width: 1150px) {
+    .project {
+        height:350vh;
+    }
 }
