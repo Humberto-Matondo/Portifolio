@@ -196,10 +196,14 @@ button {
     .home-content {
         width: auto;
     }
-    .home-content h1{
+
+    .home-content h1 {
         font-size: 2rem;
     }
-    .home-content h3, p, .home-sci .button{
+
+    .home-content h3,
+    p,
+    .home-sci .button {
         font-size: 1.5rem;
     }
 
@@ -210,79 +214,53 @@ button {
 
 }
 
-
 .about {
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
     scroll-snap-align: center;
-    /*background-color: #050837;*/
     background: rgb(2, 2, 36);
     background: linear-gradient(0deg, rgba(2, 2, 36, 1) 30%, rgba(5, 8, 55, 1) 90%, rgba(5, 8, 55, 0) 100%);
 }
 
+.about-img {
+    height: 60%;
+    width: 60%;
+}
+
 .about-img img {
-    margin-top: 30px;
-    margin-left: 100px;
-    max-width: 30rem;
-    height: auto;
-    width: 100%;
+    margin-left: 250px;
+    width: 90%;
     border-radius: 100px;
 }
 
+.about-text {
+    margin-right: 100px;
+}
+
 .about-text h2 {
+    padding-top: 50px;
     padding-bottom: -10%;
-    font-size: 70px;
+    font-size: 4rem;
 }
 
 .about-text h2 span {
     color: var(--cor-secundaria);
 }
 
-.about-text h4 {
-    font-size: 29px;
-    font-weight: 600;
-    color: #fff;
-    line-height: 1.7;
-    margin: 15px 0 30px;
-}
-
 .about-text p {
-    color: aliceblue;
-    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 110%;
     line-height: 1.2;
     margin-bottom: 4rem;
-    width: 700px;
+    width: 100%;
 }
 
 .main-text {
     padding-top: 130px;
     margin-top: 150px;
-}
-
-.main-text .h2 {
-    margin-top: -50px;
-    font-size: 70px;
-    line-height: 1;
-    text-align: center;
-}
-
-.main-text .h2 span {
-    color: var(--cor-secundaria);
-}
-
-.main-text .p {
-    position: relative;
-    text-align: center;
-    line-height: 1;
-    width: 1000px;
-    left: 19%;
-}
-
-.main-text .p span {
-    color: var(--cor-secundaria);
 }
 
 #particles {
