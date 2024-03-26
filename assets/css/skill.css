@@ -5,6 +5,17 @@
     --brilho-secundaria: cyan;
 }
 
+.main-text2 .h2 {
+    margin-top: 50px;
+    font-size: 70px;
+    line-height: 1;
+    text-align: center;
+}
+
+.main-text2 .h2 span {
+    color: var(--cor-secundaria);
+}
+
 .container {
     max-width: 1024px;
     margin-inline: 1.5rem;
@@ -20,7 +31,6 @@
     height: 100vh;
     width: 100%;
 }
-
 
 .section__title,
 .section__subtitle {
@@ -58,8 +68,7 @@
 .skill__container {
     row-gap: 1.5rem;
     position: relative;
-    ;
-    bottom: -25%;
+    bottom: -170px;
 }
 
 .skills__title {
