@@ -39,8 +39,8 @@
     position: relative;
     justify-content: center;
     align-items: flex-start;
-    width: 350px;
-    height: 300px;
+    width: 300px;
+    height: 220px;
     background-color: rgba(192, 192, 192, 0.467);
     border-radius: 20px;
     box-shadow: 0 40px 90px rgba(0, 0, 0, 0.15);
@@ -48,15 +48,15 @@
 }
 
 .container-proj .card-proj:hover {
-    height: 400px;
+    height: 350px;
 }
 
 .container-proj .card-proj .imgBX {
     position: absolute;
-    left: 7.3%;
     top: 20px;
-    width: 300px;
-    height: 220px;
+    left: 10%;
+    width: 240px;
+    height: 150px;
     background: #333;
     border-radius: 12px;
     overflow: hidden;
@@ -65,7 +65,7 @@
 
 .container-proj .card-proj:hover .imgBX {
     top: -100px;
-    scale: 0.75;
+    scale: 0.8;
     box-shadow: 0 15px 45px rgba(0, 0, 0, 0.4);
 }
 
@@ -80,7 +80,7 @@
 
 .container-proj .card-proj .content-proj {
     position: absolute;
-    top: 250px;
+    top: 180px;
     padding: 0 30px;
     height: 35px;
     overflow: hidden;
@@ -89,7 +89,7 @@
 }
 
 .container-proj .card-proj:hover .content-proj {
-    top: 140px;
+    top: 80px;
     height: 320px;
 }
 
@@ -102,7 +102,7 @@
 
 .container-proj .card-proj .content-proj p {
     color: rgb(5, 8, 55);
-    font-size: 0.97rem;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -129,8 +129,63 @@
     border-radius: 50%;
 }
 
-@media (max-width: 1150px) {
-    .project {
-        height:350vh;
+@media screen and (max-width: 1150px) {
+
+    .container-proj .card-proj {
+        width: 40%;
+        height: 250px;
+    }
+
+    .container-proj .card-proj:hover {
+        height: 300px;
+    }
+
+    .container-proj .card-proj .imgBX {
+        left: 10%;
+        top: 20px;
+        width: 80%;
+        height: 60%;
+    }
+
+    .container-proj .card-proj:hover .imgBX {
+        scale: 0.75;
+        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.4);
+    }
+
+    .container-proj .card-proj .imgBX img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .container-proj .card-proj .content-proj h2 {
+        padding-bottom: 10px;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--clr);
+    }
+
+    .container-proj .card-proj .content-proj p {
+        color: rgb(5, 8, 55);
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .container-proj .card-proj .content-proj {
+        top: 190px;
+        height: 35px;
+    }
+
+    .container-proj .card-proj:hover .content-proj {
+        top: 90px;
+    }
+
+    .container-proj .card-proj .content-proj i {
+        font-size: 10px;
+        width: 40px;
+        height: 40px;
     }
 }
