@@ -511,7 +511,6 @@ form textarea {
         align-items: center;
         justify-content: center;
         text-align: center;
-        overflow-x: hidden;
     }
 
     .contact {

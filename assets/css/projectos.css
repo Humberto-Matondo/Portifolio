@@ -9,7 +9,7 @@
     position: relative;
     width: 100%;
     justify-content: space-between;
-    height: 160vh;
+    height: auto;
     background: rgb(2, 2, 36);
     background: linear-gradient(0deg, rgba(2, 2, 36, 1) 0%, rgba(5, 8, 55, 1) 50%, rgba(2, 2, 36, 1) 100%);
 }

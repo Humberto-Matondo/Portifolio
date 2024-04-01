@@ -131,3 +131,40 @@
     }
 
 }
+
+@media (max-width: 500px) {
+    .main-text2 .h2 {
+        margin-top: -900px;
+        font-size: 3.5rem;
+        line-height: 1;
+    }
+
+    .container {
+        max-width: 1024px;
+        margin-inline: 1.5rem;
+    }
+
+    .grid {
+        display: grid;
+        gap: 1.5rem;
+    }
+
+    .section {
+        padding-block: 2.5rem;
+        height: 120vh;
+        width: 100%;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .skill__container {
+        row-gap: 1.5rem;
+        position: relative;
+        bottom: -80px;
+    }
+
+}
