@@ -152,6 +152,39 @@ nav {
     }
 }
 
-@media (max-width: 437px) {
-    
+@media (max-width: 500px) {
+    nav {
+        display: flex;
+        margin-right: 0%;
+        font-family: "Quicksand", sans-serif;
+    }
+
+    .logo {
+        font-size: 27px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: #ffff;
+        cursor: pointer;
+        animation: slideTop 1s ease forwards;
+        font-family: "Lora", serif;
+        position: relative;
+        left: -12%;
+    }
+
+    .mobile-menu div {
+        width: 32px;
+        height: 2px;
+        background: #fff;
+        margin: 8px;
+        transition: 0.3s;
+    }
+
+    .nav-list li {
+        margin-left: -500%;
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
 }
