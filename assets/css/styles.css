@@ -74,7 +74,7 @@ h3 {
 
 
 .home-content {
-    max-width: 37.5rem;
+    max-width: 40rem;
     opacity: 0;
     animation: slideRight 1s ease forwards;
 }
@@ -498,19 +498,89 @@ form textarea {
         justify-content: space-around;
     }
 
+
     .about {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-img {
+        display: none;
+    }
+
+    .about-text h2 {
+        margin: 50px;
+    }
+
+    .about-text {
+        width: 90%;
+        margin-right: 0px;
+    }
+
+    .about-text p {
+        line-height: 1.5;
     }
 
 
 }
 
 @media (max-width: 500px) {
+    body {
+        overflow-x: hidden;
+    }
+
     section {
         align-items: center;
         justify-content: center;
         text-align: center;
+    }
+
+    .home {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20rem 10% 0;
+    }
+
+    .home-content {
+        position: relative;
+        top: -150px;
+    }
+
+    .home-content h3 {
+        font-size: 1.32rem;
+    }
+
+    .home-content h1 {
+        font-size: 2rem;
+    }
+
+    .home-content p {
+        font-size: 1rem;
+    }
+
+    .home-sci a {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .btn-box {
+        padding: 0.5rem 1.5rem;
+        border-radius: 20px;
+        font-size: .9rem;
+        letter-spacing: 0px;
+    }
+
+    .home-image {
+        position: relative;
+        top: -170px;
+        left: 0%;
+        z-index: 3;
     }
 
     .about {
@@ -626,5 +696,7 @@ form textarea {
         font-weight: 300;
     }
 
-
+    .top {
+        display: none;
+    }
 }
