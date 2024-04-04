@@ -589,6 +589,7 @@ form textarea {
         justify-content: space-around;
         align-items: center;
         text-align: center;
+        height: 70vh;
     }
 
     .about-img {
@@ -600,8 +601,9 @@ form textarea {
     }
 
     .about-text h2 {
-        margin: 50px;
-        font-size: 3.5rem;
+        margin: 0px;
+        margin-top: 210px;
+        font-size: 3rem;
         line-height: 1;
     }
 
@@ -631,7 +633,6 @@ form textarea {
         line-height: 1;
         margin: 60px 0;
         text-align: center;
-
     }
 
     .contact-text h4 {
@@ -656,11 +657,11 @@ form textarea {
 
     .contact-icons i {
         position: relative;
-        left: 25px;
+        left: 5px;
         width: 20px;
         height: 20px;
         font-size: 10px;
-        margin: 30px 50px 20px 0;
+        margin: 30px 10px 20px 0;
     }
 
     .contact-form {
@@ -699,4 +700,108 @@ form textarea {
     .top {
         display: none;
     }
+}
+
+@media (max-width: 400px) {
+
+    .home-content {
+        max-width: 40rem;
+        opacity: 0;
+        animation: slideRight 1s ease forwards;
+    }
+
+    .home-content h3 {
+        font-size: 1rem;
+        font-weight: 700;
+        opacity: 0;
+        animation: slideRight 1s ease forwards;
+    }
+
+    .home-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .home-content p {
+        font-size: .8rem;
+    }
+
+    .btn-box {
+        padding: 0.7rem 1rem;
+        border-radius: 10px;
+        font-size: .8rem;
+    }
+
+    .home-sci a {
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .about-text h2 {
+        margin: 0px;
+        margin-top: 200px;
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+
+    .about-text p {
+        font-size: .8rem;
+        line-height: 1.5;
+    }
+
+    .contact-text h2 {
+        font-size: 2.5rem;
+        line-height: 1;
+        margin: 60px 0;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .contact-text h4 {
+        margin: 10px 0;
+        color: rgb(255, 255, 255);
+        font-size: 1rem;
+    }
+
+    .contact-text p {
+        color: rgb(255, 255, 255);
+        font-size: .7rem;
+        line-height: 1.4rem;
+        width: 95%;
+    }
+
+    .contact-list li {
+        margin-bottom: 5px;
+        display: block;
+        font-size: .7rem;
+        text-align: center;
+    }
+
+    .contact-icons i {
+        position: relative;
+        left: 0px;
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+        margin: 30px 10px 20px 0;
+    }
+
+    .contact-form form input,
+    form textarea {
+        width: 93%;
+        padding: 10px;
+        margin-right: 0.7rem;
+    }
+
+    .contact-form textarea {
+        height: 100px;
+    }
+
+    .last-text p {
+        font-size: .7rem;
+        width: 100%;
+        text-align: center;
+        font-weight: 300;
+    }
+
 }

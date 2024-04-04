@@ -153,6 +153,13 @@ nav {
 }
 
 @media (max-width: 500px) {
+    .nav-list li {
+        margin-left: -400px;
+        opacity: 0;
+    }
+}
+
+@media (max-width: 400px) {
     nav {
         display: flex;
         margin-right: 0%;
@@ -177,10 +184,12 @@ nav {
         background: #fff;
         margin: 8px;
         transition: 0.3s;
+        position: relative;
+        left: 102%;
     }
 
     .nav-list li {
-        margin-left: -500%;
+        margin-left: -380px;
         opacity: 0;
     }
 

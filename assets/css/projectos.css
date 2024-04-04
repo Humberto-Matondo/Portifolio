@@ -195,7 +195,7 @@
         font-size: 3.5rem;
         line-height: 1;
     }
-    
+
     .container-proj .card-proj {
         width: 80%;
         height: 200px;
@@ -245,8 +245,27 @@
         width: 30px;
         height: 30px;
     }
+
     .container-proj .card-proj .content-proj {
         top: 170px;
         height: 30px;
     }
+}
+
+@media (max-width:400px) {
+
+    .main-text3 .h2 {
+        font-size: 2.5rem;
+    }
+
+    .container-proj .card-proj .content-proj h2 {
+        font-size: 1rem;
+    }
+
+    .container-proj .card-proj .content-proj p {
+        color: rgb(5, 8, 55);
+        font-size: .8rem;
+        text-align: center;
+    }
+
 }
