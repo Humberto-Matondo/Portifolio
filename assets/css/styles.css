@@ -179,7 +179,7 @@ button {
     position: absolute;
     width: 50%;
     height: 100%;
-    z-index: -1;
+    z-index: -10;
     top: 23%;
     left: 23%;
 }
@@ -201,7 +201,8 @@ button {
 
 .about-text {
     margin-right: 100px;
-    padding-top: 10%; /*PQ QUE NO MAC N FICA BEM?*/
+    padding-top: 10%;
+    /*PQ QUE NO MAC N FICA BEM?*/
 }
 
 .about-text h2 {
@@ -518,7 +519,7 @@ form textarea {
     }
 
     .last-text p {
-       font-size: 1.1rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -697,7 +698,7 @@ form textarea {
     }
 }
 
-@media (max-width: 415px){
+@media (max-width: 415px) {
 
     .btn-box {
         padding: 0.7rem 1rem;
@@ -705,13 +706,17 @@ form textarea {
         font-size: .7rem;
         margin: 10px;
     }
-    
+
     .liquid-shape {
-        z-index: -1;
+        z-index: -10;
     }
-    
+
     .liquid-shape:nth-child(2) {
         filter: blur(50px);
+    }
+
+    .contact-text h2 {
+        margin-top: 100px;
     }
 }
 
@@ -841,12 +846,12 @@ form textarea {
     .home-content p {
         font-size: .8rem;
     }
-    
+
     .img-box img {
         width: 40%;
         height: auto;
     }
-    
+
     .btn-box {
         padding: 0.7rem 1rem;
         border-radius: 10px;
@@ -863,20 +868,18 @@ form textarea {
     .about-text h2 {
         font-size: 2rem;
     }
+
     .contact-text h2 {
         font-size: 2.6rem;
         line-height: 1;
         margin-top: 300px;
-    
+
     }
-    .contact-icons i{
+
+    .contact-icons i {
         width: 25px;
         height: 25px;
     }
 
-
-}
-
-@media (max-width: 321px) {
 
 }
