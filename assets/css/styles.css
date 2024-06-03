@@ -161,7 +161,6 @@ button {
     position: relative;
     top: -4.5%;
     left: 10%;
-    z-index: 3;
     width: 120%;
 }
 
@@ -179,7 +178,7 @@ button {
     position: absolute;
     width: 50%;
     height: 100%;
-    z-index: -10;
+    z-index: -1;
     top: 23%;
     left: 23%;
 }
@@ -576,14 +575,12 @@ form textarea {
         position: relative;
         top: -170px;
         left: 0%;
-        z-index: 3;
     }
 
     .liquid-shape {
         position: absolute;
         width: 84%;
         height: 0%;
-        z-index: 1;
         top: 0%;
         left: 7%;
     }
