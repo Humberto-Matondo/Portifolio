@@ -581,11 +581,15 @@ form textarea {
 
     .liquid-shape {
         position: absolute;
-        width: 100%;
+        width: 84%;
         height: 0%;
         z-index: -10;
         top: 0%;
-        left: 0%;
+        left: 7%;
+    }
+
+    .liquid-shape:nth-child(2) {
+        filter: blur(1000px);
     }
 
     .about {
